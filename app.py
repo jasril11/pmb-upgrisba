@@ -850,7 +850,7 @@ elif menu == "Kontak":
         border-radius: 20px;
         box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
         max-width: 650px;
-        margin: auto;
+        margin:70px auto 0px auto;
     ">
 
     <h3 style="
