@@ -141,7 +141,7 @@ section[data-testid="stSidebar"] * {{
     box-shadow: 0px 10px 25px rgba(0,0,0,0.18);
 
     width: 85%;
-    max-width: 1350px;
+    max-width: 1200px;
 
     margin-left: auto;
     margin-right: auto;
