@@ -758,7 +758,6 @@ elif menu == "Biaya Kuliah":
     <h2 style="
     text-align:left;
     color:#0d1b4c;
-    margin-bottom:10px;
     ">
     Biaya Kuliah
     </h2>
