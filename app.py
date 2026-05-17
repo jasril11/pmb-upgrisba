@@ -649,7 +649,7 @@ elif menu == "Profil Prodi":
 
     st.markdown("""
     <div class="card" style="
-    padding:30px;
+    padding:20px;
     margin:20px auto 30px auto;
     max-width:1100px;
     ">
@@ -657,7 +657,7 @@ elif menu == "Profil Prodi":
     <h3 style="
     text-align:center;
     color:#0d1b4c;
-    margin-bottom:25px;
+    margin-bottom:5px;
     font-size:30px;
     "><center>
     Profil Program Studi
@@ -666,7 +666,7 @@ elif menu == "Profil Prodi":
     <p style="
     font-size:20px;
     line-height:2;
-    text-align:justify;
+    text-align:center;
     color:#444;
     ">
 
