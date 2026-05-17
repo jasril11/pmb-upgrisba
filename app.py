@@ -667,14 +667,12 @@ elif menu == "Profil Prodi":
     text-align:center;
     color:#444;
     ">
-
     Program Studi Sains Data
     berfokus pada pengolahan data,
     Artificial Intelligence,
     Machine Learning,
     Big Data,
     dan pemrograman modern.
-
     </p>
     </center>
     </div>
