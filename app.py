@@ -237,6 +237,10 @@ section[data-testid="stSidebar"] * {{
 
 .footer {{
 
+    width: 92%;
+
+    margin: auto;
+
     margin-top: 70px;
 
     background: rgba(255,255,255,0.94);
@@ -257,9 +261,13 @@ section[data-testid="stSidebar"] * {{
 
 .footer-column {{
 
-    flex: 1;
+    background: rgba(255,255,255,0.35);
 
-    min-width: 220px;
+    padding: 20px;
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(6px);
 }}
 
 .footer-subtitle {{
@@ -296,6 +304,7 @@ section[data-testid="stSidebar"] * {{
 }}
 
 .footer-link:hover {{
+
     color: #005bea;
 }}
 
@@ -306,6 +315,8 @@ section[data-testid="stSidebar"] * {{
     gap: 20px;
 
     margin-top: 15px;
+
+    flex-wrap: wrap;
 }}
 
 .social-icons a {{
@@ -328,6 +339,7 @@ section[data-testid="stSidebar"] * {{
 .social-icons img {{
 
     width: 24px;
+
     height: 24px;
 }}
 
@@ -342,6 +354,8 @@ section[data-testid="stSidebar"] * {{
     border-top: 1px solid #ddd;
 
     color: #555;
+
+    font-size: 16px;
 }}
 
 .whatsapp {{
@@ -374,7 +388,7 @@ section[data-testid="stSidebar"] * {{
 
     gap: 10px;
 
-        font-size: 15px;
+    font-size: 15px;
 
     transition: 0.3s;
 }}
@@ -395,39 +409,127 @@ section[data-testid="stSidebar"] * {{
 
 @media (max-width: 768px) {{
 
-.hero {{
-    padding: 20px 15px;
-    margin-top: 10px;
-}}
+    .hero {{
 
-.hero h1 {{
-    font-size: 28px;
-}}
+        padding: 20px 15px;
 
-.hero h2 {{
-    font-size: 22px;
-}}
+        margin-top: 10px;
+    }}
 
-.hero h3 {{
-    font-size: 18px;
-}}
+    .hero h1 {{
 
-.hero p {{
-    font-size: 14px;
-}}
+        font-size: 28px;
+    }}
 
-.card {{
-    margin-bottom: 20px;
-}}
+    .hero h2 {{
 
-.footer-container {{
-    flex-direction: column;
-}}
+        font-size: 22px;
+    }}
 
-.footer-column {{
-    width: 100%;
-}}
+    .hero h3 {{
 
+        font-size: 18px;
+    }}
+
+    .hero p {{
+
+        font-size: 14px;
+    }}
+
+    .card {{
+
+        margin-bottom: 20px;
+    }}
+
+    .footer {{
+
+        width: 95%;
+
+        padding: 25px;
+    }}
+
+    .footer-container {{
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }}
+
+    .footer-column {{
+
+        width: 100%;
+
+        min-width: 100%;
+
+        padding: 18px;
+    }}
+
+    .footer-subtitle {{
+
+        font-size: 32px;
+
+        text-align: left;
+    }}
+
+    .footer-text {{
+
+        font-size: 18px;
+
+        line-height: 1.8;
+    }}
+
+    .social-icons {{
+
+        flex-direction: column;
+
+        gap: 18px;
+    }}
+
+    .social-icons a {{
+
+        font-size: 18px;
+    }}
+
+    .social-icons img {{
+
+        width: 30px;
+
+        height: 30px;
+    }}
+
+    .footer-link {{
+
+        font-size: 18px;
+
+        margin-bottom: 14px;
+    }}
+
+    .copyright {{
+
+        font-size: 15px;
+
+        line-height: 1.8;
+    }}
+
+    .whatsapp {{
+
+        right: 12px;
+
+        bottom: 12px;
+
+        padding: 10px 14px;
+
+        font-size: 14px;
+    }}
+
+    .whatsapp img {{
+
+        width: 24px;
+
+        height: 24px;
+    }}
 }}
 
 </style>
