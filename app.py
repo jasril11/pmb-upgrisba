@@ -127,39 +127,56 @@ section[data-testid="stSidebar"] * {{
         #00c6fb
     );
 
-    padding: 30px 20px;
-    border-radius: 25px;
-    text-align: center;
-    color: white;
-    margin-top: -70px;
-    margin-bottom: 25px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    padding: 20px 15px;
 
-    width: 100%;
-    max-width: 950px;
+    border-radius: 30px;
+
+    text-align: center;
+
+    color: white;
+
+    margin-top: -50px;
+    margin-bottom: 0px;
+
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.18);
+
+    width: 96%;
+    max-width: 1350px;
 
     margin-left: auto;
     margin-right: auto;
+
+    box-sizing: border-box;
 }}
 
 .hero h1 {{
-    font-size: 52px;
+
+    font-size: clamp(28px, 3.5vw, 52px);
+
     font-weight: 700;
+
+    line-height: 1.35;
+
     margin-bottom: 18px;
 }}
 
 .hero h2 {{
-    font-size: 34px;
-    margin-bottom: 18px;
+
+    font-size: clamp(20px, 2vw, 32px);
+
+    margin-bottom: 14px;
 }}
 
 .hero h3 {{
-    font-size: 24px;
+
+    font-size: clamp(18px, 1.8vw, 24px);
+
     margin-bottom: 15px;
 }}
 
 .hero p {{
-    font-size: 18px;
+
+    font-size: clamp(14px, 1.3vw, 20px);
 }}
 
 .card {{
@@ -411,10 +428,14 @@ section[data-testid="stSidebar"] * {{
 
     .hero {{
 
-        padding: 20px 15px;
+    width: 94%;
 
-        margin-top: 10px;
-    }}
+    padding: 30px 18px;
+
+    margin-top: 10px;
+
+    border-radius: 22px;
+   }}
 
     .hero h1 {{
 
@@ -574,7 +595,7 @@ WEBSITE PENERIMAAN MAHASISWA BARU PROGRAM STUDI SAINS DATA
 UNIVERSITAS PGRI SUMATERA BARAT
 </h3>
 <p>
-Tahun Akademik 2026/2027
+<h3>Tahun Akademik 2026/2027</h3>
 </p>
 </div>
 
@@ -598,7 +619,7 @@ if menu == "Beranda":
     <h3 style="
     color:#0d1b4c;
     margin-bottom:20px;
-    font-size:40px;
+    font-size:30px;
     ">
     Selamat Datang di PMB Sains Data
     </h3>
@@ -632,14 +653,14 @@ elif menu == "Profil Prodi":
     max-width:1100px;
     ">
 
-    <h2 style="
+    <h3 style="
     text-align:center;
     color:#0d1b4c;
     margin-bottom:25px;
-    font-size:42px;
+    font-size:30px;
     ">
     Profil Program Studi
-    </h2>
+    </h3>
 
     <p style="
     font-size:20px;
@@ -666,7 +687,7 @@ elif menu == "Profil Prodi":
     color:#0d1b4c;
     margin-top:10px;
     margin-bottom:25px;
-    font-size:44px;
+    font-size:30px;
     ">
     Profesi Lulusan
     </h2>
@@ -734,13 +755,13 @@ elif menu == "Profil Prodi":
 elif menu == "Biaya Kuliah":
 
     st.markdown("""
-    <h1 style="
+    <h2 style="
     text-align:center;
     color:#0d1b4c;
     margin-bottom:30px;
     ">
     Biaya Kuliah
-    </h1>
+    </h2>
     """, unsafe_allow_html=True)
 
     data = {
