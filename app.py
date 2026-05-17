@@ -8,6 +8,7 @@ import pandas as pd
 import sqlite3
 from datetime import datetime
 import base64
+import requests
 
 # =========================================================
 # CONFIG PAGE
@@ -37,6 +38,31 @@ def get_base64(file_path):
 # =========================================================
 
 bg_image = get_base64("kampus.jpg")
+
+# =========================================================
+# WHATSAPP API
+# =========================================================
+
+TOKEN = "E4VpspWTWeN9F4NsoW1K"
+
+def kirim_wa(pesan):
+
+    url = "https://api.fonnte.com/send"
+
+    headers = {
+        "Authorization": TOKEN
+    }
+
+    data = {
+        "target": "085762228563",
+        "message": pesan
+    }
+
+    requests.post(
+        url,
+        data=data,
+        headers=headers
+    )
 
 # =========================================================
 # DATABASE SQLITE
@@ -877,6 +903,18 @@ elif menu == "Pendaftaran":
 
                 conn.commit()
 
+                pesan = f"""
+                PENDAFTAR BARU PMB
+
+                Nama: {nama}
+                Email: {email}
+                HP: {hp}
+                Sekolah: {sekolah}
+                Jalur: {jalur}
+              """
+
+                kirim_wa(pesan)
+
                 st.markdown("""
                 <div style="
                 background: rgba(13, 27, 76, 0.92);
@@ -1010,7 +1048,7 @@ elif menu == "Kontak":
     </div>
 
     <a class="whatsapp"
-    href="https://wa.me/6281363387278?text=Halo%20Admin%20PMB%20Sains%20Data%20UPGRISBA"
+    href="https://wa.me/6285762228563?text=Halo%20Admin%20PMB%20Sains%20Data%20UPGRISBA"
     target="_blank">
 
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
