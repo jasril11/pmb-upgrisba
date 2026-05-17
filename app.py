@@ -466,9 +466,9 @@ st.markdown("""
 
 <div class="hero">
 
-<h1>
+<h2>
 PENERIMAAN MAHASISWA BARU
-</h1>
+</h2>
 
 <h2>
 PROGRAM STUDI S1 SAINS DATA
