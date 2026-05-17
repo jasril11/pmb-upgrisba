@@ -23,12 +23,14 @@ st.set_page_config(
 # FUNCTION BASE64 BACKGROUND
 # =========================================================
 
+
 def get_base64(file_path):
 
     with open(file_path, "rb") as file:
         data = file.read()
 
     return base64.b64encode(data).decode()
+
 
 # =========================================================
 # LOAD BACKGROUND IMAGE
@@ -79,17 +81,13 @@ conn.commit()
 st.markdown(f"""
 <style>
 
-/* =====================================================
-BACKGROUND WEBSITE
-===================================================== */
-
 .stApp {{
 
     background-image:
 
     linear-gradient(
-        rgba(255,255,255,0.45),
-        rgba(255,255,255,0.45)
+        rgba(255,255,255,0.25),
+        rgba(255,255,255,0.25)
     ),
 
     url("data:image/jpg;base64,{bg_image}");
@@ -100,10 +98,6 @@ BACKGROUND WEBSITE
     background-attachment: fixed;
 }}
 
-/* =====================================================
-HIDE STREAMLIT DEFAULT
-===================================================== */
-
 #MainMenu {{
     visibility: hidden;
 }}
@@ -111,14 +105,6 @@ HIDE STREAMLIT DEFAULT
 footer {{
     visibility: hidden;
 }}
-
-header {{
-    visibility: hidden;
-}}
-
-/* =====================================================
-SIDEBAR
-===================================================== */
 
 section[data-testid="stSidebar"] {{
 
@@ -133,10 +119,6 @@ section[data-testid="stSidebar"] * {{
     color: white;
 }}
 
-/* =====================================================
-HEADER HERO
-===================================================== */
-
 .hero {{
 
     background: linear-gradient(
@@ -145,54 +127,48 @@ HEADER HERO
         #00c6fb
     );
 
-    padding: 25px 20px;
+    padding: 30px 20px;
     border-radius: 25px;
     text-align: center;
     color: white;
-    margin-top: -70px;
-    margin-bottom: 10px;
+    margin-top: -100px;
+    margin-bottom: 25px;
     box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
 
     width: 100%;
-    max-width: 900px;
+    max-width: 950px;
 
     margin-left: auto;
     margin-right: auto;
 }}
 
 .hero h1 {{
-    font-size: 45px;
+    font-size: 52px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }}
 
 .hero h2 {{
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    margin-bottom: 18px;
 }}
 
 .hero h3 {{
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }}
 
 .hero p {{
-    font-size: 17px;
+    font-size: 18px;
 }}
-
-/* =====================================================
-CARD
-===================================================== */
 
 .card {{
 
-    background: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.94);
 
     padding: 25px;
 
     border-radius: 20px;
-
-    min-height: 180px;
 
     box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
 
@@ -210,14 +186,10 @@ CARD
 }}
 
 .card p {{
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.8;
     color: #333;
 }}
-
-/* =====================================================
-BUTTON
-===================================================== */
 
 .stButton > button {{
 
@@ -233,7 +205,7 @@ BUTTON
         #00c6fb
     );
 
-    color: white;
+      color: white;
 
     font-size: 18px;
     font-weight: bold;
@@ -245,10 +217,6 @@ BUTTON
     transform: scale(1.02);
 }}
 
-/* =====================================================
-INPUT
-===================================================== */
-
 .stTextInput input,
 .stTextArea textarea,
 .stSelectbox div {{
@@ -256,43 +224,35 @@ INPUT
     border-radius: 10px !important;
 }}
 
-/* =====================================================
-TABLE
-===================================================== */
-
 [data-testid="stDataFrame"] {{
 
-    background: white;
+    background: rgba(255,255,255,0.94);
 
-    border-radius: 15px;
+    border-radius: 18px;
 
-    padding: 10px;
+    padding: 12px;
+
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }}
-
-/* =====================================================
-FOOTER
-===================================================== */
 
 .footer {{
 
     margin-top: 70px;
 
-    background: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.94);
 
     padding: 50px;
 
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 25px;
 }}
 
 .footer-container {{
 
-    display: flex;
+    display: grid;
 
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
 
-    flex-wrap: wrap;
-
-    gap: 30px;
+    gap: 40px;
 }}
 
 .footer-column {{
@@ -339,10 +299,6 @@ FOOTER
     color: #005bea;
 }}
 
-/* =====================================================
-SOCIAL ICONS
-===================================================== */
-
 .social-icons {{
 
     display: flex;
@@ -375,10 +331,6 @@ SOCIAL ICONS
     height: 24px;
 }}
 
-/* =====================================================
-COPYRIGHT
-===================================================== */
-
 .copyright {{
 
     text-align: center;
@@ -391,10 +343,6 @@ COPYRIGHT
 
     color: #555;
 }}
-
-/* =====================================================
-WHATSAPP BUTTON
-===================================================== */
 
 .whatsapp {{
 
@@ -426,7 +374,7 @@ WHATSAPP BUTTON
 
     gap: 10px;
 
-    font-size: 15px;
+        font-size: 15px;
 
     transition: 0.3s;
 }}
@@ -445,14 +393,11 @@ WHATSAPP BUTTON
     height: 28px;
 }}
 
-/* =====================================================
-RESPONSIVE
-===================================================== */
-
 @media (max-width: 768px) {{
 
 .hero {{
     padding: 20px 15px;
+    margin-top: 10px;
 }}
 
 .hero h1 {{
@@ -549,20 +494,24 @@ if menu == "Beranda":
 
     st.markdown("""
     <div class="card" style="
-    margin-top:25px;
+    margin-top:20px;
     text-align:center;
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
     ">
 
     <h2 style="
     color:#0d1b4c;
-    margin-bottom:15px;
+    margin-bottom:20px;
+    font-size:40px;
     ">
     Selamat Datang di PMB Sains Data
     </h2>
 
     <p style="
-    font-size:20px;
-    line-height:1.8;
+    font-size:22px;
+    line-height:1.9;
     color:#444;
     ">
 
@@ -585,14 +534,14 @@ elif menu == "Profil Prodi":
     st.markdown("""
     <div class="card" style="
     padding:30px;
-    min-height:200px;
-    margin:70px auto 0px auto;
+    margin:20px auto 30px auto;
+    max-width:1100px;
     ">
 
     <h2 style="
     text-align:center;
     color:#0d1b4c;
-    margin-bottom:10px;
+    margin-bottom:25px;
     font-size:42px;
     ">
     Profil Program Studi
@@ -600,10 +549,9 @@ elif menu == "Profil Prodi":
 
     <p style="
     font-size:20px;
-    line-height:1.8;
+    line-height:2;
     text-align:justify;
     color:#444;
-    margin-top:10px;
     ">
 
     Program Studi Sains Data
@@ -622,8 +570,9 @@ elif menu == "Profil Prodi":
     <h2 style="
     text-align:center;
     color:#0d1b4c;
-    margin-top:5px;
-    margin-bottom:15px;
+    margin-top:10px;
+    margin-bottom:25px;
+    font-size:44px;
     ">
     Profesi Lulusan
     </h2>
@@ -657,7 +606,6 @@ elif menu == "Profil Prodi":
         <p>Memberikan solusi berbasis data dan teknologi.</p>
         </div>
         """, unsafe_allow_html=True)
-
     with col2:
 
         st.markdown("""
@@ -723,9 +671,9 @@ elif menu == "Biaya Kuliah":
     df = pd.DataFrame(data)
 
     st.dataframe(
-    df,
-    width="stretch"
-)
+        df,
+        width="stretch"
+    )
 
 # =========================================================
 # PENDAFTARAN
@@ -762,7 +710,7 @@ elif menu == "Pendaftaran":
 
         upload = st.file_uploader(
             "Upload Berkas",
-            type=["pdf","jpg","png"]
+            type=["pdf", "jpg", "png"]
         )
 
         submit = st.form_submit_button(
@@ -794,8 +742,8 @@ elif menu == "Pendaftaran":
                     alamat,
                     jalur,
                     tanggal
-
-                )
+                    
+                  )
 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)
 
@@ -813,9 +761,24 @@ elif menu == "Pendaftaran":
 
                 conn.commit()
 
-                st.success(
-                    "Pendaftaran berhasil!"
-                )
+                st.markdown("""
+                <div style="
+                background: rgba(13, 27, 76, 0.92);
+                color: white;
+                padding: 18px;
+                border-radius: 14px;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 15px;
+                box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+                ">
+
+                Pendaftaran Berhasil!
+
+                </div>
+
+                """, unsafe_allow_html=True)
 
                 st.balloons()
 
@@ -844,166 +807,102 @@ elif menu == "Data Pendaftar":
 elif menu == "Kontak":
 
     st.markdown("""
-    <div style="
-        background: rgba(255,255,255,0.88);
-        padding: 25px;
-        border-radius: 20px;
-        box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
-        max-width: 650px;
-        margin:70px auto 0px auto;
-    ">
 
-    <h3 style="
-        text-align:center;
-        color:#0d1b4c;
-        margin-bottom:25px;
-    ">
-    Kontak Dosen Program Studi Sains Data
+    <div class="footer">
+
+    <div class="footer-container">
+
+    <div class="footer-column">
+
+    <h3 class="footer-subtitle">
+    Kontak Dosen
     </h3>
 
-    <div style="
-        font-size:20px;
-        line-height:1.8;
-        color:#222;
-    ">
-    📞 <b>Zulfaneti</b><br>
-    081363387278
+    <p class="footer-text">
+
+    📞 Zulfaneti<br> 081363387278
     <br><br>
-    📞 <b>Satrio Junaidi</b><br>
-    082389238003
+    📞 Satrio Junaidi<br> 082389238003
+    </p>
+
+    </div>
+
+    <div class="footer-column">
+
+    <h3 class="footer-subtitle">
+    Informasi Kampus           
+    </h3>     
+                    
+    <p class="footer-text">
+                
+    📍 Jl. Gunung Pangilun Padang
+    <br><br>
+    ☎ 07517053731
+    <br><br>
+    ✉ info@upgrisba.ac.id
+    </p>
+
+    </div>
+
+    <div class="footer-column">
+
+    <h3 class="footer-subtitle">
+    Media Sosial
+    </h3>
+
+    <div class="social-icons">
+
+    <a href="https://facebook.com" target="_blank">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+
+    <span>Facebook</span>
+
+    </a>
+
+    <a href="https://instagram.com" target="_blank">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
+
+    <span>Instagram</span>
+
+    </a>
+
     </div>
 
     </div>
+
+    <div class="footer-column">
+
+    <h3 class="footer-subtitle">        
+    Tautan </h3>
+    <a class="footer-link"
+    href="https://upgrisba.ac.id">
+    Website Universitas
+    </a>
+    <a class="footer-link"
+    href="https://spmb.upgrisba.ac.id">
+    Portal PMB
+    </a>
+    </div>
+    </div>
+
+    <div class="copyright">
+    © 2026 Universitas PGRI Sumatera Barat
+    </div>
+
+    </div>
+
+    <a class="whatsapp"
+    href="https://wa.me/6281363387278?text=Halo%20Admin%20PMB%20Sains%20Data%20UPGRISBA"
+    target="_blank">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
+    <span>
+    Hubungi Kami
+    </span>
+
+    </a>
+
     """, unsafe_allow_html=True)
-
-# =========================================================
-# FOOTER
-# =========================================================
-
-st.markdown("""
-
-<div class="footer">
-
-<div class="footer-container">
-
-<div class="footer-column">
-
-<h3 class="footer-subtitle">
-Universitas PGRI Sumatera Barat
-</h3>
-
-<p class="footer-text">
-Seleksi Penerimaan Mahasiswa Baru
-</p>
-
-<div class="social-icons">
-
-<a href="https://facebook.com" target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
-
-<span>Facebook</span>
-
-</a>
-
-<a href="https://instagram.com" target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
-
-<span>Instagram</span>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="footer-column">
-
-<h3 class="footer-subtitle">
-Kontak Kami
-</h3>
-
-<p class="footer-text">
-
-Jl. Gunung Pangilun Padang
-
-<br>
-
-07517053731
-
-<br>
-
-info@upgrisba.ac.id
-
-</p>
-
-</div>
-
-<div class="footer-column">
-
-<h3 class="footer-subtitle">
-Menu
-</h3>
-
-<a class="footer-link" href="#">
-Beranda
-</a>
-
-<a class="footer-link" href="#">
-Program Studi
-</a>
-
-<a class="footer-link" href="#">
-Informasi
-</a>
-
-<a class="footer-link" href="#">
-Pendaftaran
-</a>
-
-</div>
-
-<div class="footer-column">
-
-<h3 class="footer-subtitle">
-Tautan
-</h3>
-
-<a class="footer-link"
-href="https://upgrisba.ac.id">
-
-Website Universitas
-
-</a>
-
-<a class="footer-link"
-href="https://spmb.upgrisba.ac.id">
-
-Portal PMB
-
-</a>
-
-</div>
-
-</div>
-
-<div class="copyright">
-© 2026 Universitas PGRI Sumatera Barat
-</div>
-
-</div>
-
-<a class="whatsapp"
-href="https://wa.me/6281363387278?text=Halo%20Admin%20PMB%20Sains%20Data%20UPGRISBA"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
-<span>
-Hubungi Kami
-</span>
-
-</a>
-
-""", unsafe_allow_html=True)
