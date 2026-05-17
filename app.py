@@ -610,9 +610,10 @@ if menu == "Beranda":
 
     st.markdown("""
     <div class="card" style="
-    margin-top:20px;
+    padding:22px 30px;
+    margin:20px auto 30px auto;
     text-align:center;
-    max-width:1000px;
+    max-width:1100px;
     margin-left:auto;
     margin-right:auto;
     ">
