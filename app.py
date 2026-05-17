@@ -439,7 +439,7 @@ section[data-testid="stSidebar"] * {{
 
 st.sidebar.image(
     "logo.png",
-    width=150
+    width=200
 )
 
 st.sidebar.title(
