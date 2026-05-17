@@ -661,7 +661,7 @@ elif menu == "Profil Prodi":
     margin-bottom:5px;
     font-size:30px;
     "><center>
-    Profil Program Studi
+    <b>Profil Program Studi</b>
     </div>
     
     <p style="
@@ -797,7 +797,7 @@ elif menu == "Biaya Kuliah":
 
 elif menu == "Pendaftaran":
 
-    st.markdown("## Form Pendaftaran")
+    st.markdown(<b>"## Form Pendaftaran"</b>)
 
     with st.form("form"):
 
