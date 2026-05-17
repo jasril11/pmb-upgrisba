@@ -467,8 +467,6 @@ st.markdown("""
 <div class="hero">
 <h2>
 PENERIMAAN MAHASISWA BARU
-</h2>
-<h2>
 PROGRAM STUDI S1 SAINS DATA
 </h2>
 <h3>
@@ -496,13 +494,13 @@ if menu == "Beranda":
     margin-right:auto;
     ">
 
-    <h2 style="
+    <h3 style="
     color:#0d1b4c;
     margin-bottom:20px;
     font-size:40px;
     ">
     Selamat Datang di PMB Sains Data
-    </h2>
+    </h3>
 
     <p style="
     font-size:22px;
