@@ -164,14 +164,14 @@ section[data-testid="stSidebar"] * {{
 
     font-size: clamp(20px, 2vw, 32px);
 
-    margin-bottom: 14px;
+    margin-bottom: 5px;
 }}
 
 .hero h3 {{
 
     font-size: clamp(18px, 1.8vw, 24px);
 
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }}
 
 .hero p {{
