@@ -588,7 +588,7 @@ menu = st.sidebar.radio(
 st.markdown("""
 
 <div class="hero">
-<h2>
+<center><h2>
 WEBSITE PENERIMAAN MAHASISWA BARU PROGRAM STUDI SAINS DATA
 </h2>
 <h3>
@@ -597,6 +597,7 @@ UNIVERSITAS PGRI SUMATERA BARAT
 <p>
 <h3>Tahun Akademik 2026/2027</h3>
 </p>
+</center>
 </div>
 
 """, unsafe_allow_html=True)
@@ -616,7 +617,7 @@ if menu == "Beranda":
     margin-right:auto;
     ">
 
-    <h3 style="
+    <center><h3 style="
     color:#0d1b4c;
     margin-bottom:20px;
     font-size:30px;
@@ -636,7 +637,7 @@ if menu == "Beranda":
     Machine Learning, Big Data, dan Data Analytics.
 
     </p>
-
+    </center>
     </div>
     """, unsafe_allow_html=True)
 
@@ -653,7 +654,7 @@ elif menu == "Profil Prodi":
     max-width:1100px;
     ">
 
-    <h3 style="
+    <center><h3 style="
     text-align:center;
     color:#0d1b4c;
     margin-bottom:25px;
@@ -677,7 +678,7 @@ elif menu == "Profil Prodi":
     dan pemrograman modern.
 
     </p>
-
+    </center>
     </div>
     """, unsafe_allow_html=True)
 
