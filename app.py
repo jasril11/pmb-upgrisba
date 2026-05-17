@@ -663,9 +663,10 @@ elif menu == "Profil Prodi":
     </h3>
     <p style="
     font-size:20px;
-    line-height:1;
+    line-height:1.8;
     text-align:center;
     color:#444;
+    margin-top:0px;
     ">
     Program Studi Sains Data
     berfokus pada pengolahan data,
