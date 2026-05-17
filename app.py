@@ -588,12 +588,12 @@ menu = st.sidebar.radio(
 st.markdown("""
 
 <div class="hero">
-<center><h1>
+<center><h2>
 WEBSITE PENERIMAAN MAHASISWA BARU PROGRAM STUDI SAINS DATA
-</h1>
-<h1>
+</h2>
+<h2>
 UNIVERSITAS PGRI SUMATERA BARAT
-</h1>
+</h2>
 <p>
 <h2>Tahun Akademik 2026/2027</h2>
 </p>
