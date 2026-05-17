@@ -911,7 +911,7 @@ elif menu == "Pendaftaran":
                 HP: {hp}
                 Sekolah: {sekolah}
                 Jalur: {jalur}
-              """
+                """
 
                 kirim_wa(pesan)
 
