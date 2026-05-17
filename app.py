@@ -654,12 +654,12 @@ elif menu == "Profil Prodi":
     max-width:1100px;
     ">
 
-    <center><h3 style="
+    <h3 style="
     text-align:center;
     color:#0d1b4c;
     margin-bottom:25px;
     font-size:30px;
-    ">
+    "><center>
     Profil Program Studi
     </h3>
 
