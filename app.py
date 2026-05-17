@@ -756,7 +756,7 @@ elif menu == "Biaya Kuliah":
 
     st.markdown("""
     <h2 style="
-    text-align:center;
+    text-align:left;
     color:#0d1b4c;
     margin-bottom:30px;
     ">
