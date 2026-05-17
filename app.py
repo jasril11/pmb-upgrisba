@@ -666,11 +666,13 @@ elif menu == "Profil Prodi":
     
     <p style="
     font-size:20px;
-    line-height:1.8;
+    line-height:1.7;
     text-align:center;
     color:#444;
     margin-top:0px;
-    ">Program Studi Sains Data
+    margin-bottom:0px;
+    ">
+    Program Studi Sains Data
     berfokus pada pengolahan data,
     Artificial Intelligence,
     Machine Learning,
