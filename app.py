@@ -465,23 +465,18 @@ menu = st.sidebar.radio(
 st.markdown("""
 
 <div class="hero">
-
 <h2>
 PENERIMAAN MAHASISWA BARU
 </h2>
-
 <h2>
 PROGRAM STUDI S1 SAINS DATA
 </h2>
-
 <h3>
 UNIVERSITAS PGRI SUMATERA BARAT
 </h3>
-
 <p>
 Tahun Akademik 2026/2027
 </p>
-
 </div>
 
 """, unsafe_allow_html=True)
