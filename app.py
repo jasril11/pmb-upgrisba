@@ -797,7 +797,7 @@ elif menu == "Biaya Kuliah":
 
 elif menu == "Pendaftaran":
 
-    st.markdown(<b>"## Form Pendaftaran"</b>)
+    st.markdown("## Form Pendaftaran")
 
     with st.form("form"):
 
