@@ -131,7 +131,7 @@ section[data-testid="stSidebar"] * {{
     border-radius: 25px;
     text-align: center;
     color: white;
-    margin-top: -100px;
+    margin-top: -70px;
     margin-bottom: 25px;
     box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
 
