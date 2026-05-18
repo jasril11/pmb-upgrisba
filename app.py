@@ -1048,7 +1048,7 @@ elif menu == "Kontak":
     </div>
 
     <a class="whatsapp"
-    href="https://wa.me/6285762228563?text=Halo%20Admin%20PMB%20Sains%20Data%20UPGRISBA"
+    href="https://wa.me/6282389238003?text=Halo%20Admin%20PMB%20Sains%20Data%20UPGRISBA"
     target="_blank">
 
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
