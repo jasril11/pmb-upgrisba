@@ -1006,7 +1006,7 @@ elif menu == "Kontak":
 
     <div class="social-icons">
 
-    <a href="https://facebook.com" target="_blank">
+    <a href="https://www.facebook.com/upgrisba.ac.id" target="_blank">
 
     <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
 
@@ -1014,7 +1014,7 @@ elif menu == "Kontak":
 
     </a>
 
-    <a href="https://instagram.com" target="_blank">
+    <a href="https://www.instagram.com/upgrisba/" target="_blank">
 
     <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
 
