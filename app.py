@@ -842,11 +842,12 @@ elif menu == "Pendaftaran":
         jalur = st.selectbox(
             "Jalur Pendaftaran",
             [
-                "Reguler",
+                "Keluarga Besar PGRI",
                 "KIP-K",
                 "Roadshow",
                 "Mahasiswa Undangan",
-                "Rekomendasi Wali Nagari"
+                "Rekomendasi Wali Nagari",
+                "Siswa Berprestasi"
             ]
         )
 
