@@ -9,6 +9,7 @@ import sqlite3
 from datetime import datetime
 import base64
 import requests
+import os
 
 # =========================================================
 # CONFIG PAGE
@@ -100,6 +101,9 @@ CREATE TABLE IF NOT EXISTS mahasiswa (
 
 conn.commit()
 
+if not os.path.exists("uploads"):
+    os.makedirs("uploads")
+    
 # =========================================================
 # CUSTOM CSS
 # =========================================================
@@ -852,7 +856,7 @@ elif menu == "Pendaftaran":
         )
 
         upload = st.file_uploader(
-            "Upload Berkas",
+            "Upload Bukti Pendaftaran",
             type=["pdf", "jpg", "png"]
         )
 
@@ -903,6 +907,16 @@ elif menu == "Pendaftaran":
                 ))
 
                 conn.commit()
+
+                if upload is not None:
+
+                    with open(
+                       os.path.join("uploads", upload.name),
+                       "wb"
+                    ) as f:
+
+                       f.write(upload.getbuffer()
+                       ) 
 
                 pesan = f"""
                 PENDAFTAR BARU PMB
